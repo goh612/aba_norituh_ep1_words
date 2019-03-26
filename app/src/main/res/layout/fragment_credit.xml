@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CreditFragment"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:id="@+id/iv_credit"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/aba_ep1_main"
+        android:layout_below="@id/tv_credit_make"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_credit_make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="행동치료사 구성은\n+\n그녀를 사랑하는 프로그래머\n="
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_credit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Icon made by Freepik from www.flaticon.com "
+        android:gravity="center"
+        android:layout_below="@id/iv_credit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        />
+
+
+
+
+
+</RelativeLayout>

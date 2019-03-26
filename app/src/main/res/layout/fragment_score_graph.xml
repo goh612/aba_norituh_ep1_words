@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ScoreGraphFragment"
+    android:background="@color/myBlue"
+    android:paddingTop="30dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/lay_type_position"
+        android:background="@drawable/white_corner_back"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/rv_score_graph"
+        >
+
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lc_score_graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_corner_back"
+            android:layout_margin="10dp"
+            >
+
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="%"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            />
+    </RelativeLayout>
+
+
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </Spinner>
+
+
+    <LinearLayout
+        android:id="@+id/lay_type_position"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RadioGroup
+            android:id="@+id/rg_score_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/white_corner_back"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_score_graph_consonant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="자음"
+                />
+            <RadioButton
+                android:id="@+id/rb_score_graph_vowel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모음"
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:id="@+id/rb_score_graph_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="받침"
+                android:layout_weight="1"
+                />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_corner_back"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+
+            android:layout_weight="1"
+
+            >
+
+            <CheckBox
+                android:id="@+id/cb_score_graph_position1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="처음"
+                android:layout_weight="1"
+                />
+            <CheckBox
+                android:id="@+id/cb_score_graph_position2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중간"
+                android:layout_weight="1"
+                />
+            <CheckBox
+                android:id="@+id/cb_score_graph_position3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="끝"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_score_graph"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_corner_back"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@id/lay_type_position"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

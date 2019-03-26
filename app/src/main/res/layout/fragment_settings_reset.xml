@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SettingsResetFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단어 초기화"
+        android:textSize="17dp"
+        android:layout_alignStart="@id/btn_settings_word_reset"
+        android:layout_alignEnd="@id/btn_settings_word_reset"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_settings_word_reset"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@id/btn_settings_client_reset"
+        android:background="@drawable/green_corner_back"
+        android:text="실행"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단어 리스트를\n초기화합니다.\n입력했던\n단어 데이터가\n사라집니다."
+        android:layout_below="@id/btn_settings_word_reset"
+        android:layout_alignStart="@id/btn_settings_word_reset"
+        android:layout_alignEnd="@id/btn_settings_word_reset"
+        android:gravity="center"
+        android:layout_alignTop="@+id/tv_settings_reset_sub"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학습자 초기화"
+        android:textSize="17dp"
+        android:layout_alignStart="@id/btn_settings_client_reset"
+        android:layout_alignEnd="@id/btn_settings_client_reset"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_settings_client_reset"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/blue_corner_back"
+        android:layout_centerHorizontal="true"
+        android:text="실행"
+        />
+
+    <TextView
+        android:id="@+id/tv_settings_reset_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학습자 리스트를\n초기화합니다.\n학습자 점수기록도\n초기화됩니다."
+        android:layout_below="@id/btn_settings_word_reset"
+        android:layout_alignStart="@id/btn_settings_client_reset"
+        android:layout_alignEnd="@id/btn_settings_client_reset"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체 초기화"
+        android:textSize="17dp"
+        android:layout_alignStart="@id/btn_settings_all_reset"
+        android:layout_alignEnd="@id/btn_settings_all_reset"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_settings_all_reset"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/orange_corner_back"
+        android:layout_toEndOf="@id/btn_settings_client_reset"
+        android:text="실행"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모든 데이터를\n초기화합니다."
+        android:layout_below="@id/btn_settings_word_reset"
+        android:layout_alignStart="@id/btn_settings_all_reset"
+        android:layout_alignEnd="@id/btn_settings_all_reset"
+        android:gravity="center"
+        android:layout_alignTop="@+id/tv_settings_reset_sub"
+
+        />
+
+
+
+</RelativeLayout>

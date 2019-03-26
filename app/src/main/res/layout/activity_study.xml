@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/myRed"
+            android:layout_alignParentStart="true"
+            android:text="뒤로가기"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_study_score"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/blue_corner_back"
+            android:text="점수표시"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/myGreen"
+            android:layout_alignParentEnd="true"
+            android:text="끝내기"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            />
+
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_study"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <include layout="@layout/navi"/>
+
+</android.support.v4.widget.DrawerLayout>

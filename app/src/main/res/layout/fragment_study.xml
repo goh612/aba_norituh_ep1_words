@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.StudyFragment"
+    android:background="@color/myGreen"
+    >
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_study"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            >
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lay_study_word"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_toLeftOf="@id/btn_correct"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:id="@+id/tv_study_1_1"
+                    android:fontFamily="@font/consonant"
+                    style="@style/StudyText"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_study_1_2"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/vowel" />
+                <TextView
+                    android:id="@+id/tv_study_1_3"
+                    android:fontFamily="@font/support"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_2_1"
+                    android:fontFamily="@font/consonant"
+                    android:layout_toRightOf="@id/tv_study_1_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_2_2"
+                    android:fontFamily="@font/vowel"
+                    android:layout_toRightOf="@id/tv_study_1_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_2_3"
+                    android:fontFamily="@font/support"
+                    android:layout_toRightOf="@id/tv_study_1_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_3_1"
+                    android:fontFamily="@font/consonant"
+                    android:layout_toRightOf="@id/tv_study_2_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_3_2"
+                    android:fontFamily="@font/vowel"
+                    android:layout_toRightOf="@id/tv_study_2_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_3_3"
+                    android:fontFamily="@font/support"
+                    android:layout_toRightOf="@id/tv_study_2_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_4_1"
+                    android:fontFamily="@font/consonant"
+                    android:layout_toRightOf="@id/tv_study_3_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_4_2"
+                    android:fontFamily="@font/vowel"
+                    android:layout_toRightOf="@id/tv_study_3_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_4_3"
+                    android:fontFamily="@font/support"
+                    android:layout_toRightOf="@id/tv_study_3_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_5_1"
+                    android:fontFamily="@font/consonant"
+                    android:layout_toRightOf="@id/tv_study_4_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_5_2"
+                    android:fontFamily="@font/vowel"
+                    android:layout_toRightOf="@id/tv_study_4_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_5_3"
+                    android:fontFamily="@font/support"
+                    android:layout_toRightOf="@id/tv_study_4_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_6_1"
+                    android:fontFamily="@font/consonant"
+                    android:layout_toRightOf="@id/tv_study_5_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_6_2"
+                    android:fontFamily="@font/vowel"
+                    android:layout_toRightOf="@id/tv_study_5_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_study_6_3"
+                    android:fontFamily="@font/support"
+                    android:layout_toRightOf="@id/tv_study_5_1"
+                    style="@style/StudyText"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:text="1/20"
+                />
+
+
+            <Button
+                android:id="@+id/btn_correct"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/myGreen"
+                android:text="O"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_count"
+                android:padding="3dp"
+                />
+
+            <Button
+                android:id="@+id/btn_wrong"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn_correct"
+                android:backgroundTint="@color/myRed"
+                android:text="X"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</FrameLayout>

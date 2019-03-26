@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_right_corner_back"
+    android:layout_gravity="start|center"
+    android:fitsSystemWindows="true"
+    android:id="@+id/nv"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <ImageButton
+                android:id="@+id/btn_go_main"
+                style="@style/NaviButton"
+                android:background="@drawable/red_corner_back"
+                android:src="@drawable/house"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메인으로"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+            <ImageButton
+                android:id="@+id/btn_go_study"
+                style="@style/NaviButton"
+                android:background="@drawable/green_corner_back"
+                android:src="@drawable/study"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공부하기"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+            <ImageButton
+                android:id="@+id/btn_go_score"
+                style="@style/NaviButton"
+                android:background="@drawable/blue_corner_back"
+                android:src="@drawable/score"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기록보기"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+            <ImageButton
+                android:id="@+id/btn_go_settings"
+                style="@style/NaviButton"
+                android:background="@drawable/orange_corner_back"
+                android:src="@drawable/settings"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정하기"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+</android.support.design.widget.NavigationView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_write_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기록할 학습자 선택"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <ListView
+            android:id="@+id/lv_write_client"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_write_title"
+            android:layout_above="@id/btn_write_register"
+            android:layout_margin="10dp"
+            android:background="@drawable/blue_corner_back"
+            android:padding="10dp"
+            >
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_write_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="학습자 등록"
+            android:backgroundTint="@color/myGreen"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/btn_write_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="닫기"
+            android:layout_toRightOf="@id/btn_write_register"
+            android:backgroundTint="@color/myRed"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

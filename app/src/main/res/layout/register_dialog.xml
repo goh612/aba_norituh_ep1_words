@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:background="@drawable/blue_corner_back"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_reg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학습자 등록"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="27sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_corner_back"
+            android:layout_below="@id/tv_reg_title"
+            android:layout_above="@id/btn_reg_register"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_reg_name_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름 : "
+                android:textSize="16sp"
+                android:paddingVertical="5dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_reg_gender_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:text="성별 : "
+                android:textSize="16sp"
+                android:layout_below="@id/tv_reg_name_sub"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:id="@+id/tv_reg_age_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이 : "
+                android:textSize="16sp"
+                android:layout_below="@id/tv_reg_gender_sub"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_reg_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_reg_name_sub"
+                android:layout_alignBaseline="@id/tv_reg_name_sub"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:hint="이름 입력"
+                />
+
+            <RadioGroup
+                android:id="@+id/rg_reg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_reg_name_sub"
+                android:layout_alignTop="@id/tv_reg_gender_sub"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp"
+                >
+                <RadioButton
+                    android:id="@+id/rb_reg_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_reg_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여"
+                    android:textSize="18sp"
+                    />
+
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_reg_age"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_reg_name_sub"
+                android:layout_alignBaseline="@id/tv_reg_age_sub"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:hint="나이 입력"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_reg_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/myGreen"
+            android:layout_centerHorizontal="true"
+            android:text="등록하기"
+            android:textColor="#fff"
+            android:paddingHorizontal="50dp"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:id="@+id/btn_reg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/myOrange"
+            android:layout_toRightOf="@id/btn_reg_register"
+            android:layout_alignParentBottom="true"
+            android:text="뒤로 가기"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

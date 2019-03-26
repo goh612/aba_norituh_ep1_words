@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_position_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="글자 위치 선택하기"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_position_title"
+            android:layout_alignStart="@id/tv_position_title"
+            android:layout_alignEnd="@id/tv_position_title"
+            android:gravity="center"
+            android:background="@drawable/white_corner_back"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            >
+            <RadioButton
+                android:id="@+id/rb_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="처음"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/rb_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중간"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/rb_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="끝"
+                android:textSize="15sp"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_selected_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="선택된 단어 목록"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/rg_position"
+            />
+
+        <ListView
+            android:id="@+id/lv_selected_words"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/tv_position_title"
+            android:layout_alignEnd="@id/tv_position_title"
+            android:layout_below="@id/tv_selected_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:background="@drawable/green_corner_back"
+            android:dividerHeight="0dp"
+
+            >
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/lay_btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/btn_close"
+                android:backgroundTint="@color/myRed"
+                style="@style/DialogButtonTheme"
+                android:text="닫기"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btn_research"
+                android:backgroundTint="@color/myGreen"
+                style="@style/DialogButtonTheme"
+                android:text="조회"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btn_start"
+                android:backgroundTint="@color/myBlue"
+                style="@style/DialogButtonTheme"
+                android:text="시작"
+                android:layout_weight="3"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_optional_words"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:numColumns="2"
+            android:background="@drawable/blue_corner_back"
+            android:padding="10dp"
+            android:gravity="center"
+
+            android:layout_toRightOf="@id/tv_position_title"
+            android:layout_toLeftOf="@id/lay_btn_set"
+            >
+
+        </GridView>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

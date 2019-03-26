@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SettingsColorFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/lay_settings_color"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_toLeftOf="@id/btn_correct"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            style="@style/StudyText"
+            android:text="강조"
+            android:fontFamily="@font/nanumex"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:fontFamily="@font/consonant"
+            style="@style/StudyText"
+            android:layout_alignParentTop="true"
+            android:text="강"
+            android:textColor="#FF0000"
+            />
+    </RelativeLayout>
+
+
+        <SeekBar
+            android:id="@+id/sb_settings_red"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/lay_settings_color"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:max="255"
+            android:min="0"
+            />
+        <SeekBar
+            android:id="@+id/sb_settings_green"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/sb_settings_red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:max="255"
+            android:min="0"
+            />
+        <SeekBar
+            android:id="@+id/sb_settings_blue"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/sb_settings_green"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:max="255"
+            android:min="0"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:layout_toStartOf="@id/sb_settings_red"
+        android:layout_alignBottom="@id/sb_settings_red"
+        android:layout_alignTop="@id/sb_settings_red"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:layout_toStartOf="@id/sb_settings_red"
+        android:layout_alignBottom="@id/sb_settings_green"
+        android:layout_alignTop="@id/sb_settings_green"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:layout_toStartOf="@id/sb_settings_red"
+        android:layout_alignBottom="@id/sb_settings_blue"
+        android:layout_alignTop="@id/sb_settings_blue"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_settings_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_settings_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/orange_corner_back"
+        android:text="색 변경"
+        android:textSize="16dp"
+        />
+
+
+</RelativeLayout>
